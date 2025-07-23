@@ -45,7 +45,7 @@ export const updateContactById = async (req, res) => {
       phone,
       type,
     },
-    // new agr new fields ko send krta hai to wo bhi update ho jana chahye
+   
     { new: true }
   );
   if (!updatedContact)
@@ -76,7 +76,7 @@ export const getContactByUserId = async (req, res) => {
   res.json({ mesg: "getuser  Contact successfully", userContact, success: true });
 };
 
-// write a function return promise 
+
 
 
 
